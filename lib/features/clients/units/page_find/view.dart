@@ -1,16 +1,14 @@
-import 'package:flutter/material.dart';
 
+part of'../../view.dart';
+class _AllClientsView extends StatelessWidget {
+  const _AllClientsView({Key? key}) : super(key: key);
 
-import '../../../../widgets/custom_button.dart';
-import 'drop_down.dart';
-import 'grid_list.dart';
-class AllClientsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(body: Column(
       children: [
         SortBy(),
-        Expanded(child: ClientsGridView()),
+        const Expanded(child: ClientsGridView()),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
           child: CustomButton(function: (){}, text: 'اجمالي ايرادات اليوم 5\nاجمالي ايرادات الشهر 100'),

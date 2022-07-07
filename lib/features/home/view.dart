@@ -19,7 +19,7 @@ class HomeView extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            SizedBox(height: 0.5.sh,
+            SizedBox(height: 0.6.sh,
                 child: const HomeGridView()
             ),
           Center(child: InkWell(onTap: ()=>MagicRouter.navigateTo(const AppointmentView())

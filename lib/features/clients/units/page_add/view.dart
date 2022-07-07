@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
+part of'../../view.dart';
 
 
-import '../../../../widgets/custom_button.dart';
-import 'form_list.dart';
-class AddClinetView extends StatelessWidget {
+class _AddClientView extends StatelessWidget {
+  const _AddClientView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(body: Padding(
@@ -11,7 +11,7 @@ class AddClinetView extends StatelessWidget {
       child: Column(
         children: [
           Expanded(child: FormClientList()),
-          CustomButton(function: (){}, text: 'اضف المستخدم')
+          const SubmitBtn()
         ],
       ),
     ),);

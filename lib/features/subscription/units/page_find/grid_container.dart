@@ -42,7 +42,7 @@ class SubscriptionContainer extends StatelessWidget {
           ),
           Row(children: [
             Expanded(child: CustomButton(text: 'حذف', function: () {  },height: 45,)),
-            SizedBox(width: 20,),
+            const SizedBox(width: 20,),
             Expanded(child: CustomButton(text: 'المشتركين', function: () {  },height: 45,))
 
           ],)

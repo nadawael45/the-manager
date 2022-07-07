@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
 
-import 'grid_list.dart';
-class AllSubscriptionView extends StatelessWidget {
+part of'../../view.dart';
+class _AllSubscriptionView extends StatelessWidget {
+  const _AllSubscriptionView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SubscriptionGridView(),);
+    return const Scaffold(body:SubscriptionGridView(),);
   }
 }

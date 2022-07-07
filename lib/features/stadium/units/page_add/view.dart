@@ -1,10 +1,6 @@
-import 'package:flutter/material.dart';
-
-
-import '../../../../widgets/custom_button.dart';
-import 'form_list.dart';
-class AddStadiumView extends StatelessWidget {
-  const AddStadiumView({Key? key}) : super(key: key);
+part of'../../view.dart';
+class _AddStadiumView extends StatelessWidget {
+  const _AddStadiumView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +9,7 @@ class AddStadiumView extends StatelessWidget {
       child: Column(
         children: [
           Expanded(child: FormStadiumList()),
-          CustomButton(function: (){}, text: 'اضف ملعب')
+          const SubmitStadiumBtn(),
         ],
       ),
     ),);

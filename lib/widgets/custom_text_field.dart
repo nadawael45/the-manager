@@ -4,14 +4,14 @@ import '../core/color_manager/color_manager.dart';
 
 class CustomTextField extends StatelessWidget {
   String? title;
-  var onSaved;
+  var controller;
   var validate;
   var prefixIcon;
   bool obscure;
 
   CustomTextField(
       {this.title,
-      this.onSaved,
+      this.controller,
       this.validate,
       this.obscure = false,
       this.prefixIcon});
@@ -29,7 +29,7 @@ class CustomTextField extends StatelessWidget {
               borderRadius: BorderRadius.circular(7)),
           child: TextFormField(
             obscureText: obscure,
-            onSaved: onSaved,
+            controller: controller,
             validator: validate,
             autofocus: false,
             textDirection: TextDirection.rtl,

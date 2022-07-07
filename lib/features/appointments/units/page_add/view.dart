@@ -1,8 +1,5 @@
-import 'package:flutter/material.dart';
 
-
-import '../../../../widgets/custom_button.dart';
-import 'form_list.dart';
+part of'../../view.dart';
 class AddAppointView extends StatelessWidget {
   const AddAppointView({Key? key}) : super(key: key);
 
@@ -13,7 +10,7 @@ class AddAppointView extends StatelessWidget {
       child: Column(
         children: [
           Expanded(child: FormAppointList()),
-          CustomButton(function: (){}, text: 'اضف معاد')
+          const SubmitAppointmentBtn(),
         ],
       ),
     ),);
